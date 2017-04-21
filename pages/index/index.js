@@ -1,0 +1,71 @@
+//index.js
+//获取应用实例
+var app = getApp()
+Page({
+  data: {
+    imgUrls: [
+      'http://www.bing517.com/images/top1.jpg',
+      'http://www.bing517.com/images/top4.jpg',
+      'http://www.bing517.com/images/top5.jpg',
+      'http://www.bing517.com/images/top6.jpg',
+    ],
+    interval: 2000,
+    duration: 1000,
+    listData:[
+      {
+        "img":"../../img/cartoon.png",
+        "text1":"动漫冰淇淋",
+        "text2":"店内提供免费wifi",
+        "text31":"3元",
+        "text32":"门市价:4元"
+      },
+      {
+        "img":"../../img/cartoon.png",
+        "text1":"动漫冰淇淋",
+        "text2":"店内提供免费wifi",
+        "text31":"3元",
+        "text32":"门市价:4元"
+      },
+      {
+        "img":"../../img/cartoon.png",
+        "text1":"动漫冰淇淋",
+        "text2":"店内提供免费wifi",
+        "text31":"3元",
+        "text32":"门市价:4元"
+      },
+      {
+        "img":"../../img/cartoon.png",
+        "text1":"动漫冰淇淋",
+        "text2":"店内提供免费wifi",
+        "text31":"3元",
+        "text32":"门市价:4元"
+      },
+      {
+        "img":"../../img/cartoon.png",
+        "text1":"动漫冰淇淋",
+        "text2":"店内提供免费wifi",
+        "text31":"3元",
+        "text32":"门市价:4元"
+      },
+      {
+        "img":"../../img/cartoon.png",
+        "text1":"动漫冰淇淋",
+        "text2":"店内提供免费wifi",
+        "text31":"3元",
+        "text32":"门市价:4元"
+      },
+      {
+        "img":"../../img/cartoon.png",
+        "text1":"动漫冰淇淋",
+        "text2":"店内提供免费wifi",
+        "text31":"3元",
+        "text32":"门市价:4元"
+      }
+    ]
+  },
+  onShareAppMessage:function(){
+    return{
+      title:"维多利亚冰淇淋"
+    }
+  }
+})

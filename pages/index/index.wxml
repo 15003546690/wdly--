@@ -1,0 +1,53 @@
+<view class="box">
+    <view class="wdly-banner">
+        <swiper indicator-dots="true"
+        autoplay="true" interval="{{interval}}" duration="{{duration}}" class="wdly-swiper" indicator-active-color="#ff5777">
+        <block wx:for="{{imgUrls}}">
+            <swiper-item>
+            <image src="{{item}}" class="slide-image" width="355" height="150"/>
+            </swiper-item>
+        </block>
+        </swiper>
+    </view>
+    <view class="wdly-center">
+        <view class="center-left">
+            <text class="center-left-text1">我们约会吧</text>
+            <text class="center-left-text2">恋人家人好朋友</text>
+            <view class="center-left-img">
+                <image src="../../img/home.png"></image>
+            </view>
+        </view>
+        <view class="center-right">
+            <view class="center-right-top">
+                <text class="center-right-text1">低价超值</text>
+                <text class="center-right-text2">十元惠生活</text>
+                <view class="center-right-img">
+                    <image src="../../img/hub.jpg"></image>
+                </view>
+            </view>
+            <view class="center-right-top">
+                <text class="center-right-text1">每日特惠</text>
+                <text class="center-right-text2">懒懒下午茶</text>
+                <view class="center-right-img">
+                    <image src="../../img/after.png"></image>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="wdly-like">
+        <text class="wdly-like-title">猜你喜欢</text>
+        <view class="wdly-list" wx:for="{{listData}}">
+            <view class="wdly-list-img">
+                <image src="../../img/cartoon.png"></image>
+            </view>
+            <view class="wdly-list-content">
+                <text class="wdly-list-text1">{{item.text1}}</text>
+                <text class="wdly-list-text1">{{item.text2}}</text>
+                <view class="wdly-list-text3">
+                    <text class="wdly-list-text3-1">{{item.text31}}</text>
+                    <text class="wdly-list-text3-2">{{item.text32}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
